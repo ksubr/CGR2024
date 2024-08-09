@@ -1,0 +1,284 @@
+/*
+HTML 5 Template Name: Basic 90
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+/* Color scheme
+ *      EDC7B7
+ *      EEE2DC
+ *      BAB2B5
+ *      123C69
+ *      AC3B61
+ * 
+ * eee0d8     f6efeb    D3BEBA - banner
+ * 
+ */   
+:root{
+  --textoddcolor: #aeb4be;
+  --textevencolor: #aeb4be;
+  --bgoddcolor: #333F48;
+  --bgevencolor: #20272c;
+  --textbg: #20272c;
+  --headingcolor: #93a5b7;
+  --fontsize: 16px; 
+}
+
+html *
+{
+/*    font-size: 16px ;    */
+   font-family: Helevetica !important; 
+}
+
+a:link {
+  color: rgb(227, 227, 227);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(227, 227, 227);
+}
+
+/* mouse over link */
+a:hover {
+  color: #ffffff;
+}
+
+/* selected link */
+a:active {
+  color: rgb(197, 197, 245);
+}
+
+
+/*  list items alternating colours */
+li {color: var(--textevencolor);
+/*     background-color: #0B0C10; */
+ } 
+li:nth-child(odd) {     color: var(--textoddcolor);
+/*     background-color: #1F2833; */
+}
+
+/*  Table of lectures */
+table#t03 {
+  width: 100%;    
+  text-align:center;
+  align:middle; 
+}
+
+/* ---------------------------------------------------- */
+/*  Table of lectures */
+table#t01 {
+   width: 100%;    
+   text-align:center;
+   align:middle; 
+}
+table#t01 td:nth-child(1) {
+  text-align: right;
+}
+table#t01 td:nth-child(2) {
+  text-align: left;
+}
+table#t01 tr:nth-child(odd) {
+    color: var(--textoddcolor);
+    background-color: var(--bgoddcolor);
+}
+table#t01 tr:nth-child(even) {
+    color: var(--textevencolor);
+    background-color: var(--bgevencolor);
+}
+
+
+
+/*  Table of tutorials */
+table#t02 {
+  width:100%; 
+    text-align:center;
+    align:middle;
+}
+table#t02 td:nth-child(3) {
+  text-align: left;
+}
+table#t02 tr:nth-child(odd) {
+        color: var(--textoddcolor);
+    background-color: var(--bgoddcolor);
+
+}
+table#t02 tr:nth-child(even) {
+    color: var(--textevencolor);
+    background-color: var(--bgevencolor);
+
+}
+
+/*  Table for checklists */
+table#t04 {
+  width:65%; 
+    text-align:left;
+    align:middle;
+}
+table#t04 td:nth-child(3) {
+  text-align: left;
+}
+table#t04 tr:nth-child(odd) {
+        color: var(--textoddcolor);
+    background-color: var(--bgoddcolor);
+
+}
+table#t04 tr:nth-child(even) {
+    color: var(--textevencolor);
+    background-color: var(--bgevencolor);
+}
+
+/*  */
+
+html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+
+body{margin:0; padding:0; font-family:Georgia, "Times New Roman", Times, serif; color:var(--textoddcolor); background-color: var(--textbg)}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
+
+q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'� '; font-size:26px;}
+q:after{content:' �'; font-size:26px; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0px; padding:20px; text-align:left; }
+
+
+/*  444444 */ 
+.row1, .row1 a{    
+    color:#ffffff; 
+    background-color:#007288;     
+}
+.row2{color: var(--headingcolor); background-color: var(--textbg) ;  font-size: var(--fontsize);  }
+.row3{color: var(--headingcolor);  background-color:var(--textbg) ; font-size: var(--fontsize); }
+.rowbottom{ background-color; var(--textbg) ; font-size: 11px; }
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{display:block; width:960px; margin:0 auto;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0;  font-weight:normal; font-style:italic; line-height:normal;}
+
+
+
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:30px 0px 0 0;}
+
+#header #hgroup{float:left; margin:0 0 0px 0px;}
+#header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header #hgroup h1{font-size:36px; !important}
+#header #hgroup h2{font-size:16px;}
+
+#header form{display:block; width:290px; float:right; margin:20px 0; padding:0;}
+#header form input{display:block; float:left; width:200px; margin:0; padding:5px; color:#C0BAB6; background-color:#232323; border:1px solid #666666;}
+#header form #sf_submit{display:block; float:right; width:70px; font-size:12px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#FF9900; border:none; cursor:pointer;}
+
+#header nav{        
+        display:block; width:960px; margin:0; padding:3px 0; 
+        color:#C0BAB6; background-color:#007288; clear:both; font-size:14px; 
+        position: fixed; top: 0; z-index: 9999;            
+}
+
+#header nav ul{padding:0 20px;}
+#header nav li{display:inline; margin-right:35px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#041E42; }
+#header nav li a:hover{color: #ffffff; }
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:20px 0;}
+#footer p{margin:0; padding:0;}
+
+
+
+/* ---------------------------------------------- Scrolling text -----------------------------------------*/
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+    width: 100%;
+    overflow: hidden;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+/*     background-color: #eee; */
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  .ticker-item{
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+
+  /* Table with rounded corners */
+
+
+table.roundedCorners { 
+  border: 1px solid DarkOrange;
+  border-radius: 13px; 
+  border-spacing: 0;
+  }
+table.roundedCorners td, 
+table.roundedCorners th { 
+  border-bottom: 1px solid DarkOrange;
+  padding: 10px; 
+  }
+table.roundedCorners tr:last-child > td {
+  border-bottom: none;
+}
+
+
+
+div.scroll-container {
+  margin: auto;
+  height: 200px;
+  background-color: var(--textbg);
+  overflow-x: clip;
+  overflow-y: scroll;
+  white-space: normal;
+  padding: 10px;
+}
+
+/* div.scroll-container img {
+  padding: 10px;
+} */
+
+
